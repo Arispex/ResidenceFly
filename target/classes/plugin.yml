@@ -10,6 +10,6 @@ commands:
     usage: /resfly
 permissions:
   resfly.use:
-    description: resfly
+    description: Allow players to use /resfly
     default: op
 softdepend: [Residence]
