@@ -1,0 +1,15 @@
+name: ResidenceFly
+version: 1.0.0
+main: me.qianyiovo.residencefly.ResidenceFly
+api-version: 1.19
+author: Qianyiovo
+description: Allow players to fly within the claim
+commands:
+  resfly:
+    description: enable/disable fly
+    usage: /resfly
+permissions:
+  resfly.use:
+    description: resfly
+    default: op
+softdepend: [Residence]
