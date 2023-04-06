@@ -32,7 +32,7 @@ class ResFly(private val plugin: JavaPlugin) : CommandExecutor {
                 }
             }
         }
-        if (residence != null) {
+        if (residence != null && residence.permissions.ownerUUID.equals(commandSender.uniqueId)) {
             commandSender.allowFlight = !commandSender.allowFlight
             commandSender.setMetadata("resfly.use", FixedMetadataValue(plugin, commandSender.allowFlight))
             if (locale != null) {
